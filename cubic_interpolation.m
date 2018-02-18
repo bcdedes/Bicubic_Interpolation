@@ -1,5 +1,5 @@
 function g = cubic_interpolation(x, scale)
-%cubic_interpoaltion_20181303
+% cubic_interpoaltion_20181303
     N = length(x);
     g = linspace(1, (N-1)*scale + 1, (N-1)*scale + 1);
     
