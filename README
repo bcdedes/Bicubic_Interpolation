@@ -1,1 +1,3 @@
-this is a git setup
+This is an implementation of bicubic interpolation as described in 
+Cubic Convolution Interpolation for Digital Image Processing by R.G. Keys
+verona.fi-p.unam.mx/boris/practicas/CubConvInterp.pdf
