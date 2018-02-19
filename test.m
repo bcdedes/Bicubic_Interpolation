@@ -1,5 +1,5 @@
-% z = eia_lr(:,:,1);
-%z = imread('res_chart3.tif');
+
+% z = imread('res_chart3.tif');
 z = im{1};
 [x,y] = meshgrid(1:90,1:90);
 [Xq,Yq] = meshgrid(1:0.25:90,1:0.25:90);
