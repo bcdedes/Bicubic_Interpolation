@@ -12,12 +12,12 @@ g(1) = x(1);
 % apply boundary condition equations for interpolation points between x1
 % and x2 (when g is a point in the subinterval of first and second inputs)
 for i = 2:scale % up to, but not including, second input
-    x_idx = 2;
+    x_idx = 1;
     d = mod(((i-1)/scale),1);
     if d == 0
         g(i) = x(x_idx);
     else    
-        g(i) = [(3*x(1) - 3*x(2) + x(3)) x(x_idx-1 : x_idx+1)]*cubicCoeffs(d)';
+        g(i) = [(3*x(1) - 3*x(2) + x(3)) x(x_idx : x_idx+2)]*cubicCoeffs(d)';
     end
 end
 

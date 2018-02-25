@@ -1,9 +1,9 @@
 %% Compare implementation with MATLAB interp2 function
 
 srcImg = eia_lr(:,:,1); % read image
-[Xq,Yq] = meshgrid(1:0.125:90,1:0.125:90); % define scaling
+[Xq,Yq] = meshgrid(1:0.25:90,1:0.25:90); % define scaling
 destImgMATLAB = interp2(srcImg,Xq,Yq,'bicubic');
-destImg = bicubicInterpolate(srcImg,8);
+destImg = bicubicInterpolate(srcImg,4);
 
 figure
 subplot(121)
