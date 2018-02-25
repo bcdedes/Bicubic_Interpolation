@@ -51,7 +51,7 @@ end
 %% Cubic convolution coefficeints for a uniformly sampled signal
 function c = cubicCoeffs( s )
 %cubicCoeffs cubic convolution coefficients
-%   but the code does compute the terms of the cubic convolution 
+%   This function does compute the terms of the cubic convolution 
 %   function (listed right after equation (25) in the paper Keys,
 %   "Cubic Convolution Interpolation for Digital Image Processing,"
 %   IEEE Transactions on Acoustics, Speech, and Signal Processing,
